@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Crumbs Bakery - Enquiry</title>
+  <link rel="icon" type="image/webp" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍞</text></svg>">
+  <link rel="stylesheet" href="style.css/style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <h1>Sweet Crumbs Bakery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="product.html">Products</a>
+      <a href="enquiry.html" aria-current="page">Enquiry</a>
+      <a href="contacts.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT - ENQUIRY FORM -->
+  <main>
+    <h2>Request a Custom Cake</h2>
+    <p>Planning a birthday, wedding, or special event? Fill in the form below and we’ll get back to you within 24 hours.</p>
+
+    <form class="enquiry-form" action="#" method="post" novalidate>
+
+      <label for="name">Full Name *</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="e.g. Thembile Mokoena"
+        autocomplete="name"
+        required
+      >
+
+      <label for="email">Email Address *</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="you@example.com"
+        autocomplete="email"
+        required
+      >
+
+      <label for="phone">Phone / WhatsApp *</label>
+      <input 
+        type="tel" 
+        id="phone" 
+        name="phone" 
+        placeholder="e.g. 071 234 5678"
+        autocomplete="tel"
+        required
+      >
+
+      <label for="event-type">Event Type</label>
+      <select id="event-type" name="event-type">
+        <option value="">--Please choose--</option>
+        <option value="birthday">Birthday</option>
+        <option value="wedding">Wedding</option>
+        <option value="anniversary">Anniversary</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="event-date">Event Date</label>
+      <input 
+        type="date" 
+        id="event-date" 
+        name="event-date"
+      >
+
+      <label for="cake-details">Cake Details *</label>
+      <textarea 
+        id="cake-details" 
+        name="cake-details" 
+        rows="5" 
+        placeholder="Flavor, size, colors, theme, writing on cake..." 
+        required
+      ></textarea>
+
+      <button type="submit">Send Enquiry</button>
+
+    </form>
+
+    <p class="required-note">* Required fields. We will contact you to confirm price and delivery.</p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Sweet Crumbs Bakery | Ga-Molekana, Limpopo</p>
+  </footer>
+
+</body>
+</html>
